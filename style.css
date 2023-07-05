@@ -1,30 +1,39 @@
-#container {
-    display: grid;
-    justify-content: center;
+#main-container {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-#container .filters {
+#main-container .filters {
     margin-bottom: 30px;
 }
 
 .cards-container {
     display: flex;
     justify-content: center;
-   
+
 }
 
 .card {
     display: flex;
     align-items: center;
-    border: 1px solid #814343;
+    border: 1px solid #eee;
+    border-radius: 7px;
     padding: 10px;
     width: 100%;
     margin-bottom: 10px;
     flex-wrap: wrap;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
 .image-container {
     width: 100px;
@@ -71,7 +80,7 @@
 }
 
 
-.category-span{
+.category-span {
     position: absolute;
     right: 11px;
     bottom: 6px;
@@ -98,4 +107,54 @@
 .tag.selected {
     background-color: #999;
     color: #fff;
+}
+
+
+
+
+
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    opacity: 0;
+    animation: fade-in 0.3s ease-in-out forwards;
+}
+
+.loading-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-top: 4px solid #666;
+    border-right: 4px solid transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
