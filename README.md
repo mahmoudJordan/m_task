@@ -17,13 +17,13 @@ please follow these steps to install and use http-server:
 
 3. Install the `http-server` package globally using npm (Node Package Manager) by running the following command:
 
-   npm install http-server -g
+   `npm install http-server -g`
 
 4. Navigate to the project directory in your terminal or command prompt.
 
 5. Start the web app using `http-server` with the desired port number (e.g., 8000). Run the following command:
 
-  http-server . -p 8000
+  `http-server . -p 8000`
 
 6. Once the server is running, open your web browser and visit `http://localhost:8000` (replace `8000` with the port number you used in the previous step).
 
