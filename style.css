@@ -1,0 +1,101 @@
+#container {
+    display: grid;
+    justify-content: center;
+}
+
+
+#container .filters {
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #814343;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.image-container {
+    width: 100px;
+    height: 100px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.data-container {
+    width: 75%;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.data-column {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.data-item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.key {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.value {
+    font-style: italic;
+}
+
+
+.category-span{
+    position: absolute;
+    right: 11px;
+    bottom: 6px;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #ff8282;
+}
+
+#tag-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.tag.selected {
+    background-color: #999;
+    color: #fff;
+}
